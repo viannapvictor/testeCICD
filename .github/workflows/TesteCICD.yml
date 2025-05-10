@@ -1,0 +1,12 @@
+name: CICD
+
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/checkout@v4.2.2
+        - name: executar uma linha de comando
+          run: echo First commit
